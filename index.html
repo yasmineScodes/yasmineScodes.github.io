@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Yasmine Sassi – Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@500;700&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="bar">
+  <button id="back" class="pill ghost" hidden data-i="back"></button>
+  <span class="sp"></span>
+  <div class="sw" role="group" aria-label="Language"><button data-l="en">EN</button><button data-l="fr">FR</button></div>
+  <button id="contact" class="pill" data-i="contact"></button>
+</header>
+
+<main class="view" id="home">
+  <div class="track">
+    <div class="stick">
+      <div class="bubbles" id="bubbles"></div>
+      <div class="head" id="head"><h1 id="h1a" data-i="welcome"></h1><h1 id="h1b" data-i="profile"></h1></div>
+      <p class="hint" id="hint" data-i="scroll"></p>
+      <div class="stage" id="stage">
+        <button class="arrow" id="prev" aria-label="previous">‹</button>
+        <div id="chars"></div>
+        <button class="arrow" id="next" aria-label="next">›</button>
+      </div>
+    </div>
+  </div>
+  <footer class="foot" id="footer">
+    <svg class="wave" viewBox="0 0 2400 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 30q150-30 300 0t300 0 300 0 300 0 300 0 300 0 300 0 300 0V60H0Z"/></svg>
+    <span class="plane">✈️</span><span class="plane p2">✉️</span>
+    <h2 data-i="contact_h"></h2>
+    <p data-i="lets"></p>
+    <div class="links">
+      <a class="pill" style="--d:.1s" href="https://www.linkedin.com/in/yasmine-sassi18/" target="_blank" rel="noopener">💼 LinkedIn</a>
+      <a class="pill" style="--d:.25s" href="https://github.com/yasmineScodes" target="_blank" rel="noopener">🐙 GitHub</a>
+      <button type="button" class="pill mail" style="--d:.4s" data-copy="yasmine_sassi@ens.univ-artois.fr">✉️ yasmine_sassi@ens.univ-artois.fr</button>
+      <button type="button" class="pill mail alt" style="--d:.55s" data-copy="yasmine1885@gmail.com">✉️ yasmine1885@gmail.com</button>
+    </div>
+  </footer>
+</main>
+
+<main class="view" id="who">
+  <div class="who-wrap">
+    <div class="note">
+      <div class="carry"><span class="bf"><b>🦋</b></span><div class="photo" id="photo"></div></div>
+      <p id="bio" data-i="bio"></p>
+    </div>
+    <div class="whochar" id="whochar"></div>
+  </div>
+</main>
+
+<main class="view" id="academic">
+  <h2 class="center" data-i="c_academic"></h2>
+  <div class="cards" id="acad"></div>
+</main>
+
+<main class="view" id="work">
+  <div class="laptop">
+    <div class="lid" id="lid"><i class="cam"></i>
+      <div class="screen">
+        <div class="pane on" id="p-desk">
+          <button class="fold" style="--x:40%" id="f-exp"><i>📁</i><span data-i="exp"></span></button>
+          <button class="fold" style="--x:60%" id="f-proj"><i>📁</i><span data-i="proj"></span></button>
+        </div>
+        <div class="pane" id="p-list">
+          <button class="mini" id="sback" aria-label="back">‹</button>
+          <div class="win">
+            <span class="wtitle" id="ltitle"></span>
+            <div class="lgrid" id="lgrid"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="deck"></div>
+  </div>
+</main>
+
+<main class="view" id="passions">
+  <div class="pg">
+    <div><h3 data-i="hobbies"></h3><div class="hob" id="hob"></div></div>
+    <div class="mid" id="mid"></div>
+    <div><h3 data-i="langs"></h3><div id="lgs"></div></div>
+  </div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
